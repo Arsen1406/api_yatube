@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
-from posts.models import Post, User, Group, Comment
+from posts.models import Post, User, Group
 from .permissions import UserOrRead
 from .serializers import (
     PostSerializers,
